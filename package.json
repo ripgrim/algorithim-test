@@ -27,7 +27,9 @@
     "db:push": "turbo -F @algorithim-test/db db:push",
     "db:studio": "turbo -F @algorithim-test/db db:studio",
     "db:generate": "turbo -F @algorithim-test/db db:generate",
-    "db:migrate": "turbo -F @algorithim-test/db db:migrate"
+    "db:migrate": "turbo -F @algorithim-test/db db:migrate",
+    "db:seed": "turbo -F @algorithim-test/db db:seed",
+    "db:seed:small": "turbo -F @algorithim-test/db db:seed:small"
   },
   "dependencies": {
     "@algorithim-test/env": "workspace:*",

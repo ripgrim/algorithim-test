@@ -5,6 +5,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "../index.css";
 import Header from "@/components/header";
 import Providers from "@/components/providers";
+import { OnboardingWrapper } from "@/components/onboarding-wrapper";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -34,6 +35,7 @@ export default function RootLayout({
             <Header />
             {children}
           </div>
+          <OnboardingWrapper />
         </Providers>
       </body>
     </html>

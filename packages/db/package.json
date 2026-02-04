@@ -13,10 +13,13 @@
     "db:push": "drizzle-kit push",
     "db:generate": "drizzle-kit generate",
     "db:studio": "drizzle-kit studio",
-    "db:migrate": "drizzle-kit migrate"
+    "db:migrate": "drizzle-kit migrate",
+    "db:seed": "bun run src/seed/index.ts",
+    "db:seed:small": "bun run src/seed/index.ts --small"
   },
   "dependencies": {
     "@algorithim-test/env": "workspace:*",
+    "@faker-js/faker": "^10.2.0",
     "@neondatabase/serverless": "^1.0.2",
     "dotenv": "catalog:",
     "drizzle-orm": "catalog:",
