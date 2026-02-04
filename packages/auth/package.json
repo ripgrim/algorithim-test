@@ -1,0 +1,24 @@
+{
+  "name": "@algorithim-test/auth",
+  "type": "module",
+  "exports": {
+    ".": {
+      "default": "./src/index.ts"
+    },
+    "./*": {
+      "default": "./src/*.ts"
+    }
+  },
+  "scripts": {},
+  "dependencies": {
+    "@algorithim-test/db": "workspace:*",
+    "@algorithim-test/env": "workspace:*",
+    "better-auth": "catalog:",
+    "dotenv": "catalog:",
+    "zod": "catalog:"
+  },
+  "devDependencies": {
+    "@algorithim-test/config": "workspace:*",
+    "typescript": "catalog:"
+  }
+}

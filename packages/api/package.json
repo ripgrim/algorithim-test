@@ -1,0 +1,29 @@
+{
+  "name": "@algorithim-test/api",
+  "type": "module",
+  "exports": {
+    ".": {
+      "default": "./src/index.ts"
+    },
+    "./*": {
+      "default": "./src/*.ts"
+    }
+  },
+  "scripts": {},
+  "dependencies": {
+    "@algorithim-test/auth": "workspace:*",
+    "@algorithim-test/db": "workspace:*",
+    "@algorithim-test/env": "workspace:*",
+    "@trpc/client": "catalog:",
+    "@trpc/server": "catalog:",
+    "@types/pg": "^8.16.0",
+    "dotenv": "catalog:",
+    "drizzle-orm": "catalog:",
+    "next": "catalog:",
+    "zod": "catalog:"
+  },
+  "devDependencies": {
+    "@algorithim-test/config": "workspace:*",
+    "typescript": "catalog:"
+  }
+}
